@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mengkonversikan Nilai Angka</title>
+</head>
+<body>
+    
+    <script language = "javascript">
+
+    var nilai = prompt("Nilai (0-100): ");
+    var hasil = "";
+    if  (nilai <= 40)
+        hasil = "E";
+
+    if  (nilai <= 55)
+        hasil = "D";
+    
+    if  (nilai <= 60)
+        hasil = "C";
+
+    if  (nilai <= 65)
+        hasil = "BC";
+
+    if  (nilai <= 70)
+        hasil = "B";
+
+    if  (nilai <= 80)
+        hasil = "AB";
+    
+    if  (nilai <= 100)
+        hasil = "A";
+        alert("Nilai Anda: " + hasil);
+
+    </script>
+</body>
+</html>

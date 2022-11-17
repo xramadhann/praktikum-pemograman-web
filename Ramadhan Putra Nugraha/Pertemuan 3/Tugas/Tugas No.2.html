@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Kalkulator Sederhana Javascript</title>
+</head> 
+  
+  <body><br><br>
+      <!-- Buat sebuah tombol -->
+      <center>
+          <form method="post" action="">
+             <!-- Buat label nilai 1 -->
+              <label for="nilai1">Nilai 1</label>
+             <!-- Buat kolom masukkan -->
+              <input type="text" id="nilai1" autocomplete="off">
+              <br><br>
+             <!-- Buat label nilai 2 -->
+               <label for="nilai2">Nilai 2</label>
+             <!-- Buat kolom masukkan -->
+               <input type="text" id="nilai2" autocomplete="off">
+             <!-- Buat spasi -->
+              <br><br><br>
+             <!-- Buat label hasil -->
+              <label for="hasil">Hasil</label>
+             <!-- Buat kolom masukkan untuk hasil -->
+              <input type="text" id="hasil" disabled="true">
+             <!-- Buat spasi -->
+              <br><br><br>
+             <!-- Buat tombol -->
+          <button type="button" id="tambah">+</button>
+          <button type="button" id="kurang">-</button>
+          <button type="button" id="kali">x</button>
+          <button type="button" id="bagi">/</button>
+          <button type="button" id="reset">reset</button>
+      
+      </form>
+      </center>
+          
+      <script language="Javascript">
+        //buat variabel
+        var nilai1 = document.getElementById('nilai1');
+        var nilai2 = document.getElementById('nilai2');
+        var tambah = document.getElementById('tambah');
+        var kurang = document.getElementById('kurang');
+        var kali = document.getElementById('kali');
+        var bagi = document.getElementById('bagi');
+        var hasil = document.getElementById('hasil');
+        var reset = document.getElementById('reset');
+        
+        //ketika tombol tambah di klik
+        tambah.addEventListener('click', function(){
+        //jalankan program untuk tambah
+        tambah = parseInt(nilai1.value) + parseInt(nilai2.value);
+        hasil.value = tambah;
+        });
+        
+        //ketika tombol kurang di klik
+        kurang.addEventListener('click', function(){
+        //jalankan program untuk kurang
+        kurang = parseInt(nilai1.value) - parseInt(nilai2.value);
+        asil.value = kurang;    
+        });
+        
+        //ketika tombol kali di klik
+        kali.addEventListener('click', function(){
+        //jalankan program untuk kali
+        kali = parseInt(nilai1.value) * parseInt(nilai2.value);
+        hasil.value = kali;
+        });
+        
+        // ketika tombol bagi di klik
+        bagi.addEventListener('click', function(){
+        //jalankan program untuk bagi
+        bagi = parseInt(nilai1.value) / parseInt(nilai2.value);
+        hasil.value = bagi;
+        });
+        
+        //ketika tombol reset di klik
+        reset.addEventListener('click', function(){
+        //jalankan program untuk reset
+        hasil.value = "";
+        nilai1.value = "";
+        nilai2.value = "";
+        });
+        
+      </script>
+  </body>
+</html>

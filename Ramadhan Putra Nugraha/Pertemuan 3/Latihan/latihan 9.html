@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contoh program Javascript</title>
+</head>
+
+<script language="Javascript">
+    function UbahWarnaLB(warna) {
+        document.bgColor = warna;
+    }
+
+    function UbahWarnaLD(warna) {
+        document.fgColor = warna;
+    }
+</script>
+
+<body>
+
+    <h1>TES</h1>
+    <form>
+        <input type="Button" value="Latar Belakang Hijau" onclick="UbahWarnaLB('Green')">
+        <input type="button" value="latar Belakang Putih" onclick="UbahWarnaLB('White')">
+        <input type="button" value="Test Kuning" onclick="UbahWarnaLD('Yellow')">
+        <input type="button" value="Test Biru" onclick="UbahWarnaLD('Blue')">
+    </form>
+
+</body>
+
+</html>
